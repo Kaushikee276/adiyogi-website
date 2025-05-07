@@ -1,0 +1,273 @@
+/* 🎨 Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+/* 🖋 General Font Setup */
+body {
+    font-family: 'Poppins', sans-serif; /* Smooth, modern font */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant heading font */
+}
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 🔹 General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #e0f2e9, #c0dbc0); /* Soft green gradient */
+    color: #5a5a5a;
+    text-align: center;
+}
+
+/* 🔹 Navigation Bar */
+header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    scroll-padding-top: 70px; /* Adjust to header height */
+}
+
+/* Header shadow when scrolling */
+header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #789f78; /* Soft green hover effect */
+}
+
+nav a:focus {
+    outline: 2px dashed #789f78;
+    outline-offset: 4px;
+}
+
+/* 🔹 Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/yoga.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero Subtext */
+.hero p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to bottom, #789f78, #5e875e);
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:focus {
+    outline: 3px solid #88c9bf;
+    outline-offset: 4px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* 🔹 About Section */
+.about {
+    background: #f3efe5;
+    padding: 60px 20px;
+}
+
+.about img.section-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+
+/* Services Section */
+.services {
+    background: #e6e6e6;
+    padding: 60px 10px;
+}
+
+/* Service Grid - 4x4 Alignment */
+.service-grid {
+    display: grid;
+    gap: 24px;
+    padding: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+/* Service Item - Better Styling */
+.service-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.service-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* 📱 Mobile Optimization */
+@media screen and (max-width: 1024px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr; /* Full-width layout on small screens */
+    }
+
+    .service-item {
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+/* 🔹 Schedule Section */
+.schedule {
+    background: #f7f3e9;
+    padding: 40px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 🔹 Contact Section */
+.contact {
+    background: #d4e2d4;
+    padding: 40px;
+}
+
+.contact a {
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #789f78;
+}
+
+/* 🔹 Footer */
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html
+lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiyogi Yoga Centre</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header (Navigation) -->
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Life, One Breath at a Time</h1>
+                <p>The only yoga membership you’ll ever need. Practice yoga, meditation, and breathwork. Learn Ayurveda and yoga philosophy.</p>
+                <a href="#contact" 
+                class="cta-button" 
+                role="button" 
+                aria-label="Claim your free trial by contacting us">
+                Claim Your Free Trial
+             </a>
+             
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Adiyogi Yoga Centre</h2>
+                <p>At Adiyogi Yoga Centre, we embrace the ancient wisdom of yoga and Ayurveda to guide you toward holistic well-being.</p>
+                <p>Our mission is to help every seeker cultivate inner peace, strength, and balance.</p>
+                <img src="assets/yoga.webp" alt="Person practicing yoga in a peaceful environment" class="section-image">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">🧘‍♀️ Yoga Classes</div>
+                <div class="service-item">🧘 One-on-One Counselling</div>
+                <div class="service-item">🪔 Meditation Sessions</div>
+                <div class="service-item">🪷 Therapeutic Yoga</div>
+                <div class="service-item">🍀 Ayurvedic Lifestyle Guidance</div>
+                <div class="service-item">🧑‍⚕️ Stress/Health Consultation</div>
+                <div class="service-item">🧠 Mental Wellness Programs</div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule">
+            <h2>Weekly Class Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Morning Session</th>
+                        <th scope="col">Evening Session</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>6:00 AM - 7:00 AM</td><td>6:00 PM - 7:00 PM</td></tr>
+                    <tr><td>Wednesday</td><td>6:00 AM - 7:00 AM</td><td>6:00 PM - 7:00 PM</td></tr>
+                    <tr><td>Friday</td><td>6:00 AM - 7:00 AM</td><td>6:00 PM - 7:00 PM</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>📧 Email: <a href="mailto:adiyogiyogacenter112@gmail.com">adiyogiyogacenter112@gmail.com</a></p>
+            <p>📞 Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>© 2025 Adiyogi Yoga Centre | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        </script>
+        
+
+</body>
+</html>
